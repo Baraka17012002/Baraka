@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website feedback survey - Share your thoughts and help improve my services">
+    <meta name="keywords" content="web development, frontend, portfolio, survey, feedback, HTML, CSS, JavaScript">
+    <meta name="author" content="Baraka Mwita">
+    <title>Survey | My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="print.css" media="print">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">Baraka Mwita</a>
+                <button id="theme-toggle" aria-label="Toggle dark/light mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button id="mobile-menu-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="survey.html" class="active">Survey</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <nav id="mobile-menu" class="mobile-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="survey.html" class="active">Survey</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Website Feedback Survey</h1>
+            </div>
+        </section>
+
+        <section class="survey-section">
+            <div class="container">
+                <div class="survey-container">
+                    <div class="survey-header">
+                        <img src="images/surveybanner.jpg" alt="Survey banner" class="survey-banner">
+                        <p class="survey-description">Thank you for taking the time to complete this survey. Your feedback is valuable and will help me improve my website and services.</p>
+                    </div>
+
+                    <div id="success-message" class="success-message" style="display: none;">
+                        <h3>Survey Submitted!</h3>
+                        <p>Thank you for your valuable feedback.</p>
+                        <button id="new-survey-btn" class="btn btn-primary">Submit Another Response</button>
+                    </div>
+
+                    <form id="survey-form" class="survey-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Name <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" class="form-control" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="age" class="form-label">Age Group</label>
+                                <select id="age" name="age" class="form-control">
+                                    <option value="">Select age group</option>
+                                    <option value="under18">Under 18</option>
+                                    <option value="18-24">18-24</option>
+                                    <option value="25-34">25-34</option>
+                                    <option value="35-44">35-44</option>
+                                    <option value="45-54">45-54</option>
+                                    <option value="55+">55+</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="occupation" class="form-label">Occupation</label>
+                                <input type="text" id="occupation" name="occupation" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">How experienced are you with web development? <span class="required">*</span></label>
+                            <div class="radio-group">
+                                <div class="radio-option">
+                                    <input type="radio" id="beginner" name="experience" value="beginner" required>
+                                    <label for="beginner">Beginner - Just starting out</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="intermediate" name="experience" value="intermediate" required>
+                                    <label for="intermediate">Intermediate - Some experience</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="advanced" name="experience" value="advanced" required>
+                                    <label for="advanced">Advanced - Experienced developer</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="expert" name="experience" value="expert" required>
+                                    <label for="expert">Expert - Professional developer</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">What aspects of web development interest you? (Select all that apply)</label>
+                            <div class="checkbox-group">
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="frontend" name="interests" value="frontend">
+                                    <label for="frontend">Frontend Development</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="backend" name="interests" value="backend">
+                                    <label for="backend">Backend Development</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="design" name="interests" value="design">
+                                    <label for="design">UI/UX Design</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="mobile" name="interests" value="mobile">
+                                    <label for="mobile">Mobile Development</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="devops" name="interests" value="devops">
+                                    <label for="devops">DevOps</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="other" name="interests" value="other">
+                                    <label for="other">Other</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="feedback" class="form-label">What feedback do you have about this portfolio website? <span class="required">*</span></label>
+                            <textarea id="feedback" name="feedback" rows="5" class="form-control" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">How would you rate this portfolio website? <span class="required">*</span></label>
+                            <div class="rating-group">
+                                <div class="rating-option">
+                                    <input type="radio" id="rating-1" name="rating" value="1" required>
+                                    <label for="rating-1">1</label>
+                                </div>
+                                <div class="rating-option">
+                                    <input type="radio" id="rating-2" name="rating" value="2" required>
+                                    <label for="rating-2">2</label>
+                                </div>
+                                <div class="rating-option">
+                                    <input type="radio" id="rating-3" name="rating" value="3" required>
+                                    <label for="rating-3">3</label>
+                                </div>
+                                <div class="rating-option">
+                                    <input type="radio" id="rating-4" name="rating" value="4" required>
+                                    <label for="rating-4">4</label>
+                                </div>
+                                <div class="rating-option">
+                                    <input type="radio" id="rating-5" name="rating" value="5" required>
+                                    <label for="rating-5">5</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">How would you prefer to be contacted?</label>
+                            <div class="radio-group">
+                                <div class="radio-option">
+                                    <input type="radio" id="contact-email" name="contactMethod" value="email">
+                                    <label for="contact-email">Email</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="contact-phone" name="contactMethod" value="phone">
+                                    <label for="contact-phone">Phone</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="contact-none" name="contactMethod" value="none">
+                                    <label for="contact-none">No contact</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="subscribe" name="subscribe">
+                                <label for="subscribe">I would like to receive updates about new projects and services. You can unsubscribe at any time.</label>
+                            </div>
+                        </div>
+
+                        <div id="form-error" class="error-alert" style="display: none;"></div>
+
+                        <button type="submit" class="btn btn-primary form-submit" id="submit-btn">Submit Survey</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3>Baraka Mwita</h3>
+                    <p>A passionate web developer focused on creating beautiful, functional, and accessible websites.</p>
+                    <p class="copyright">&copy; <span id="current-year"></span> BG Company. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <h4 class="h4">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="survey.html">Survey</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4 class="h4">Connect</h4>
+                    <ul class="social-links">
+                        <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                        <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#" aria-label="GitHub"><i class="fab fa-github"></i> GitHub</a></li>
+                        <li><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            const surveyForm = document.getElementById('survey-form');
+            const successMessage = document.getElementById('success-message');
+            const formError = document.getElementById('form-error');
+            const submitBtn = document.getElementById('submit-btn');
+            const newSurveyBtn = document.getElementById('new-survey-btn');
+            
+            if (surveyForm) {
+                surveyForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    submitBtn.textContent = 'Submitting...';
+                    submitBtn.disabled = true;
+                    setTimeout(function() {
+                        surveyForm.style.display = 'none';
+                        successMessage.style.display = 'block';
+                        surveyForm.reset();
+                        submitBtn.textContent = 'Submit Survey';
+                        submitBtn.disabled = false;
+                    }, 1500);
+                });
+            }
+            
+            if (newSurveyBtn) {
+                newSurveyBtn.addEventListener('click', function() {
+                    successMessage.style.display = 'none';
+                    surveyForm.style.display = 'block';
+                });
+            }
+        });
+    </script>
+</body>
+</html>

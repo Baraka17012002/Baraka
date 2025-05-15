@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of web development and design projects">
+    <meta name="keywords" content="web development, frontend, portfolio, projects, HTML, CSS, JavaScript">
+    <meta name="author" content="Baraka Mwita">
+    <title>Portfolio | My Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="print.css" media="print">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">Baraka Mwita</a>
+                <button id="theme-toggle" aria-label="Toggle dark/light mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button id="mobile-menu-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="survey.html">Survey</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <nav id="mobile-menu" class="mobile-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="survey.html">Survey</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>My Portfolio</h1>
+                <p class="page-description">Here are some of the projects that i can personally work on. Each project represents different skills and some tricks involving graphics design that i can do.</p>
+            </div>
+        </section>
+
+        <section class="portfolio-filter">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web-development">Web Development</button>
+                    <button class="filter-btn" data-filter="ui-design">UI/UX Design</button>
+                    <button class="filter-btn" data-filter="mobile-app">Mobile Apps</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio-projects">
+            <div class="container">
+                <div class="projects-grid">
+                    <article class="project-card" id="project1" data-category="web-development">
+                        <div class="project-image">
+                            <img src="images/e-commerce.webp" alt="E-commerce website project">
+                            <div class="project-overlay">
+                                <div class="project-actions">
+                                    <button class="details-btn" data-project="project1">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>E-commerce Website</h3>
+                            <p>A fully responsive e-commerce platform with shopping cart functionality, product filtering, and secure checkout.</p>
+                            <div class="project-details" id="project1-details">
+                                <div class="project-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">JavaScript</span>
+                                    <span class="tag">React</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-sm">Live Demo</a>
+                                    <a href="#" class="btn btn-sm btn-outline">View Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" id="project2" data-category="ui-design">
+                        <div class="project-image">
+                            <img src="images/portifolio.png" alt="Portfolio website project">
+                            <div class="project-overlay">
+                                <div class="project-actions">
+                                    <button class="details-btn" data-project="project2">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Portfolio Website</h3>
+                            <p>A creative portfolio website showcasing design and development skills with smooth animations and interactive elements.</p>
+                            <div class="project-details" id="project2-details">
+                                <div class="project-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">JavaScript</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-sm">Live Demo</a>
+                                    <a href="#" class="btn btn-sm btn-outline">View Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" id="project3" data-category="web-development">
+                        <div class="project-image">
+                            <img src="images/blog.jpg" alt="Blog platform project">
+                            <div class="project-overlay">
+                                <div class="project-actions">
+                                    <button class="details-btn" data-project="project3">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Blog Platform</h3>
+                            <p>A custom blog platform with content management system, comment functionality, and responsive design.</p>
+                            <div class="project-details" id="project3-details">
+                                <div class="project-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">JavaScript</span>
+                                    <span class="tag">Node.js</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-sm">Live Demo</a>
+                                    <a href="#" class="btn btn-sm btn-outline">View Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" id="project4" data-category="web-development">
+                        <div class="project-image">
+                            <img src="images/weather.jpg" alt="Weather app project">
+                            <div class="project-overlay">
+                                <div class="project-actions">
+                                    <button class="details-btn" data-project="project4">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Weather App</h3>
+                            <p>A weather application that displays current weather and forecasts based on user location or search.</p>
+                            <div class="project-details" id="project4-details">
+                                <div class="project-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">JavaScript</span>
+                                    <span class="tag">API</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-sm">Live Demo</a>
+                                    <a href="#" class="btn btn-sm btn-outline">View Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" id="project5" data-category="mobile-app">
+                        <div class="project-image">
+                            <img src="images/taskmanagement.jpg" alt="Task management app project">
+                            <div class="project-overlay">
+                                <div class="project-actions">
+                                    <button class="details-btn" data-project="project5">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Task Management App</h3>
+                            <p>A task management application with drag-and-drop functionality, task categories, and user authentication.</p>
+                            <div class="project-details" id="project5-details">
+                                <div class="project-tags">
+                                    <span class="tag">React</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">Firebase</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-sm">Live Demo</a>
+                                    <a href="#" class="btn btn-sm btn-outline">View Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" id="project6" data-category="ui-design">
+                        <div class="project-image">
+                            <img src="images/restaurant.png" alt="Restaurant website project">
+                            <div class="project-overlay">
+                                <div class="project-actions">
+                                    <button class="details-btn" data-project="project6">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Restaurant Website</h3>
+                            <p>A website for a restaurant featuring menu display, reservation system, and location information.</p>
+                            <div class="project-details" id="project6-details">
+                                <div class="project-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">JavaScript</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-sm">Live Demo</a>
+                                    <a href="#" class="btn btn-sm btn-outline">View Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="image-map-section">
+            <div class="container">
+                <h2 class="section-title">Areas I Wish To Do Work</h2>
+                <p class="section-description" style="text-align: center;">I intend to work with clients from around the world on different regions.</p>
+                
+                <div class="image-map-container">
+                    <img src="images/worldMap.jpg" alt="World Map">
+                </div>
+            </div>
+        </section>
+
+        <section class="project-stats">
+            <div class="container">
+                <h2 class="section-title">Project Schedule</h2>
+                
+                <div class="table-responsive">
+                    <table class="stats-table">
+                        <thead>
+                            <tr id="th">
+                                <th>Category</th>
+                                <th>Number of Projects i can handle</th>
+                                <th>Average Completion Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Web Development</td>
+                                <td>6</td>
+                                <td>4 weeks</td>
+                            </tr>
+                            <tr>
+                                <td>Web Design</td>
+                                <td>4</td>
+                                <td>2 weeks</td>
+                            </tr>
+                            <tr>
+                                <td>Mobile Apps</td>
+                                <td>4</td>
+                                <td>6 weeks</td>
+                            </tr>
+                            <tr>
+                                <td>UI/UX Design</td>
+                                <td>2</td>
+                                <td>3 weeks</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Total</td>
+                                <td>16</td>
+                                <td>3.75 weeks (avg)</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+          
+        <section class="cta-section">
+            <div class="container">
+                <h2>Do you have a project in mind?</h2>
+                <p>I'm always open to discuss new projects and creative ideas. Let's create something amazing together!</p>
+                <a href="contact.html" class="btn btn-large">Get In Touch</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3>Baraka Mwita</h3>
+                    <p>A passionate web developer focused on creating beautiful, functional, and accessible websites.</p>
+                    <p class="copyright">&copy; <span id="current-year"></span> BG Company. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <h4 class="h4">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="survey.html">Survey</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4 class="h4">Connect</h4>
+                    <ul class="social-links">
+                        <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                        <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#" aria-label="GitHub"><i class="fab fa-github"></i> GitHub</a></li>
+                        <li><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const projectCards = document.querySelectorAll('.project-card');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const filter = this.getAttribute('data-filter');
+                    
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    projectCards.forEach(card => {
+                        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            const detailButtons = document.querySelectorAll('.details-btn');
+            
+            detailButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const projectId = this.getAttribute('data-project');
+                    const detailsElement = document.getElementById(`${projectId}-details`);
+                    
+                    if (detailsElement.classList.contains('show')) {
+                        detailsElement.classList.remove('show');
+                        this.textContent = 'View Details';
+                    } else {
+                        detailsElement.classList.add('show');
+                        this.textContent = 'Hide Details';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
